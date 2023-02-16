@@ -2,7 +2,7 @@ import React from 'react'
 
 const NavBar = () => {
   return (
-    <div className='w-full bg-[#0C1221] h-12 font-[Ubuntu] sticky'>
+    <div className='w-full bg-[#0C1221] h-12 font-[Ubuntu]'>
       <ul className='flex justify-between px-6 text-white h-full items-center w-full'>
         <li><a href="">HOME</a></li>
         <li><a href="">INSTITUCIONAL</a></li>
