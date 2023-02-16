@@ -5,7 +5,7 @@ import Place from '../Img/Place.png'
 
 const PreNavbar = () => {
   return (
-    <div className='w-full bg-[#0E1527] flex justify-between px-2 text-white py-10 items-center'>
+    <div className='w-full bg-[#0E1527] flex justify-between px-2 text-white py-10 items-center font-[Ubuntu]'>
       <img src={logo} alt='Logo' className='max-h-[6.25rem] ml-12'/>
       <div className='flex space-x-[7rem]'>
         <div className='flex'>
