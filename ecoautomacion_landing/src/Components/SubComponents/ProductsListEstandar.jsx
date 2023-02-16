@@ -48,7 +48,7 @@ const ProductsListEstandar = () => {
   ]);
 
   return (
-    <div className='grid grid-cols-2 mr-14 space-x-20 justify-items-end'>
+    <div className='grid grid-cols-2 mr-14 space-x-40 justify-items-end'>
       {persons.map((person,index) => {
         return <StandarProduct key={index} nombre={person.nombre} img={person.img} descripcion={person.descripcion}/>;
       })}

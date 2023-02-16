@@ -1,5 +1,6 @@
 import React from 'react';
 import Estandar from '../Components/SubComponents/ProductsListEstandar';
+import Especial from '../Components/SubComponents/ProductsListSpecial';
 
 const Products = () => {
   return (
@@ -9,7 +10,11 @@ const Products = () => {
         <a href=''>Especiales</a>
         <a href=''>Estandar</a>
       </div>
+      <div>
+      <h1>ESTANDAR</h1>
       <Estandar />
+      <Especial/>
+      </div>
     </div>
   );
 };
