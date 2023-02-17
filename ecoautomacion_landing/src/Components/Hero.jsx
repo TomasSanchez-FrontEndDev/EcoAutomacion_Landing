@@ -5,7 +5,7 @@ import Group from '../Img/Group.png';
 
 const Hero = () => {
   return (
-    <div className='flex text-white bg-[#0E1527] w-full font-[Ubuntu] justify-between'>
+    <div className='flex text-white bg-[#0E1527] w-full font-[Ubuntu] justify-between' id='Hero'>
       <div className='w-4/12 ml-6 mt-24 flex flex-col justify-between mb-16'>
         <h1 className='text-5xl font-bold border-b-2 border-[#E1FF01] pb-1'>
           NUESTRA FABRICA

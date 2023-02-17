@@ -8,7 +8,7 @@ import Inventu from '../Img/Inventu.png';
 
 const Clients = () => {
   return (
-    <div className='bg-[#0E1527] w-full clients justify-center space-y-12 text-white pt-6 pb-20'>
+    <div className='bg-[#0E1527] w-full clients justify-center space-y-12 text-white pt-6 pb-20' id='Clients'>
       <h1 className='text-4xl font-bold ml-9'>Clientes</h1>
       <div className='flex justify-evenly items-center'>
         <img src={RogiroAceros} alt=''/>

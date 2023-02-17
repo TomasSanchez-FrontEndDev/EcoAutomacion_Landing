@@ -4,8 +4,8 @@ import Especial from '../Components/SubComponents/ProductsListSpecial';
 
 const Products = () => {
   return (
-    <div className='flex bg-gradient-to-b from-[#0E1527] via-[#5DCC97] to-[#0E1527] text-white w-full justify-between h-full'>
-      <div className='fixed ml-4 left-0 top-0'>
+    <div className='flex bg-gradient-to-b from-[#0E1527] via-[#5DCC97] to-[#0E1527] text-white w-full justify-between h-full' id='Products'>
+      <div className='top-0 ml-4 left-0 sticky'>
         <h1 className='text-4xl font-bold'>Productos</h1>
         <ul className='mt-4 space-y-3 ml-14 border-l-2 border-[#E1FF01] pl-3'>
           <li>
