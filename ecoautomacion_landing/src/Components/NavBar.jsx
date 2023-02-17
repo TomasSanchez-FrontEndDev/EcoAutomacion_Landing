@@ -28,7 +28,7 @@ function Navbar2() {
     >
       <ul className='flex justify-between px-6 text-white h-full items-center w-full'>
         <li>
-          <a href='#Home'>HOME</a>
+          <a href='#Home' className='cursor-pointer'>HOME</a>
         </li>
         <li>
           <a href='#Hero'>INSTITUCIONAL</a>

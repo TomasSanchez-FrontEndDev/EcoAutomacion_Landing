@@ -6,10 +6,12 @@ import Hero from './Components/Hero';
 import Products from './Components/Products';
 import Clients from './Components/Clients';
 import Footer from './Components/Footer';
+import WhatsappIcon from './Components/Whatsapp_Chat';
 
 const App = () => {
   return (
     <div className='scrollbar'>
+      <WhatsappIcon/>
       <PreNavBar />
       <Navbar />
       <PreHero />

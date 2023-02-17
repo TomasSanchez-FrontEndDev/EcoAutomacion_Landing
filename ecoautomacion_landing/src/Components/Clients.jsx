@@ -8,10 +8,13 @@ import Inventu from '../Img/Inventu.png';
 
 const Clients = () => {
   return (
-    <div className='bg-[#0E1527] w-full clients justify-center space-y-12 text-white pt-6 pb-20' id='Clients'>
+    <div
+      className='bg-[#0E1527] w-full clients justify-center space-y-12 text-white pt-6 pb-20'
+      id='Clients'
+    >
       <h1 className='text-4xl font-bold ml-9'>Clientes</h1>
       <div className='flex justify-evenly items-center'>
-        <img src={RogiroAceros} alt=''/>
+        <img src={RogiroAceros} alt='' />
         <img src={ChapasOroño} alt='' />
         <img src={JhonsonControl} alt='' />
         <p className='text-4xl italic'>Desde 1996...</p>
@@ -23,7 +26,9 @@ const Clients = () => {
         <img src={Inventu} alt='' />
       </div>
       <div className='text-right mr-20'>
-        <button className='bg-[#5DCC97] text-black py-2 px-4 rounded-3xl text-xl font-medium'>Cargar mas...</button>
+        <button className='bg-[#5DCC97] text-black py-2 px-4 rounded-3xl text-xl font-medium cursor-pointer'>
+          Cargar mas...
+        </button>
       </div>
     </div>
   );
