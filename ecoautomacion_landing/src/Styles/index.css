@@ -27,7 +27,6 @@ code {
 }
 
 a {
-  display: inline-block;
   position: relative;
   text-decoration: none;
 }
@@ -65,7 +64,6 @@ body::-webkit-scrollbar-thumb {
   background: none !important;
   display: flex;
   justify-content: center;
-  
 }
 
 .mapouter {

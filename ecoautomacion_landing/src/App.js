@@ -7,12 +7,11 @@ import Products from './Components/Products';
 import Clients from './Components/Clients';
 import Footer from './Components/Footer';
 import WhatsappIcon from './Components/Whatsapp_Chat';
-import Coti from './Components/Cotizacion';
 
 const App = () => {
   return (
     <div className='scrollbar'>
-      <WhatsappIcon/>
+      <WhatsappIcon />
       <PreNavBar />
       <Navbar />
       <PreHero />
@@ -20,7 +19,6 @@ const App = () => {
       <Products />
       <Clients />
       <Footer />
-      <Coti />
     </div>
   );
 };
