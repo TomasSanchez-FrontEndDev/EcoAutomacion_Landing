@@ -7,6 +7,7 @@ import Products from './Components/Products';
 import Clients from './Components/Clients';
 import Footer from './Components/Footer';
 import WhatsappIcon from './Components/Whatsapp_Chat';
+import Coti from './Components/Cotizacion';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Products />
       <Clients />
       <Footer />
+      <Coti />
     </div>
   );
 };
