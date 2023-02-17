@@ -12,13 +12,14 @@ const App = () => {
   return (
     <div className='scrollbar'>
       <PreNavBar />
-      <Navbar />
+      <Navbar2 />
+     
       <PreHero />
       <Hero />
       <Products />
       <Clients />
       <Footer />
-      <Navbar2 />
+      
     </div>
   );
 };

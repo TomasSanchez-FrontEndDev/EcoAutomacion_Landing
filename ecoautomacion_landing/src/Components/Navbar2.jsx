@@ -20,9 +20,33 @@ function Navbar2() {
   };
 
   return (
-    <nav className={`navbar ${isSticky ? 'fixed' : ''}`}>
-      // Coloca aquí los elementos de tu barra de navegación
-    </nav>
+    <div
+      className={`navbar ${
+        isSticky ? 'fixed' : ''
+      } top-0 left-0 w-full bg-[#0C1221] h-12 font-[Ubuntu] z-20`}
+      id='Navigation'
+    >
+      <ul className='flex justify-between px-6 text-white h-full items-center w-full'>
+        <li>
+          <a href='#Home'>HOME</a>
+        </li>
+        <li>
+          <a href='#Hero'>INSTITUCIONAL</a>
+        </li>
+        <li>
+          <a href='#Products'>PRODUCTOS</a>
+        </li>
+        <li>
+          <a href='#Services'>SERVICIOS</a>
+        </li>
+        <li>
+          <a href='#Clients'>CLIENTES</a>
+        </li>
+        <li>
+          <a href='#Footer'>CONTACTO</a>
+        </li>
+      </ul>
+    </div>
   );
 }
 
