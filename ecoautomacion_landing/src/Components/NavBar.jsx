@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-const navbar = document.getElementById('Navigation');
+function Navbar2() {
+  const [isSticky, setSticky] = useState(false);
 
-const NavBar = () => {
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 0) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+
   return (
     <div
-      className='{`navbar ${isSticky ? "NavBar" : ""}`} w-full bg-[#0C1221] h-12 font-[Ubuntu] top-30'
+      className={`navbar ${
+        isSticky ? 'fixed' : ''
+      } top-0 left-0 w-full bg-[#0C1221] h-12 font-[Ubuntu] z-20`}
       id='Navigation'
     >
       <ul className='flex justify-between px-6 text-white h-full items-center w-full'>
@@ -30,14 +48,6 @@ const NavBar = () => {
       </ul>
     </div>
   );
-};
+}
 
-const navscroll = () => {
-  if (window.pageYOffset > 0) {
-    navbar.classList.add('sticky');
-  } else {
-    navbar.classList.remove('sticky');
-  }
-};
-
-export default NavBar;
+export default Navbar2;

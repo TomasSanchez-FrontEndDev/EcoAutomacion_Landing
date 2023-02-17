@@ -4,8 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-
-html{
+html {
   scroll-behavior: smooth !important;
 }
 body {
@@ -23,7 +22,7 @@ code {
     monospace;
 }
 
-.clients img{
+.clients img {
   object-fit: contain;
 }
 
@@ -31,32 +30,48 @@ a {
   display: inline-block;
   position: relative;
   text-decoration: none;
-  }
-  a:before,
-  a:after {
-  content: "";
+}
+a:before,
+a:after {
+  content: '';
   display: block;
   margin: auto;
   height: 2px;
   width: 0px;
-  background: #5DCC97;
-  transition: all .8s;
-  }
-  a:hover:before,
-  a:hover:after {
+  background: #5dcc97;
+  transition: all 0.8s;
+}
+a:hover:before,
+a:hover:after {
   width: 100%;
-  }
+}
 
-  body::-webkit-scrollbar {
-    width: 1.2em;
-  }
-   
-  body::-webkit-scrollbar-track {
-    box-shadow: none 0 0 6px rgba(217, 255, 0, 0.3);
-    background-color: #0E1527;
-  }
-   
-  body::-webkit-scrollbar-thumb {
-    background-color: #5DCC97;
-    outline: 2px solid 0E1527;
-  }
+body::-webkit-scrollbar {
+  width: 1.2em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: none 0 0 6px rgba(217, 255, 0, 0.3);
+  background-color: #0e1527;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5dcc97;
+  outline: 2px solid 0e1527;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+  align-items: center;
+}
