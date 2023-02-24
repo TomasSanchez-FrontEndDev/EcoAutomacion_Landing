@@ -1,59 +1,71 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react';
 import EspecialProducts from '../SubComponents/SubComponent/SpecialProduct';
-import ExampleImg from '../../Img/Ejemplo.png'
+import ExampleImg from '../../Img/Ejemplo.png';
+import DoyPack from '../../Img/Andrea_machine.jpeg';
 
 const ProductsListSpecial = () => {
   const [EspProducts, setEspProd] = useState([
     {
       nombre: 'Punzonadora',
       img: ExampleImg,
-      descripcion:''
+      descripcion: '',
     },
     {
       nombre: 'Envasadora DoyPack',
-      img: ExampleImg,
-      descripcion:''
+      img: DoyPack,
+      video: '',
+      descripcion: '',
     },
     {
-      nombre: 'Envasadora Sobres de Azucar',
+      nombre: 'Envasadora de Azucar',
       img: ExampleImg,
-      descripcion:''
+      descripcion: '',
     },
     {
       nombre: 'Chiller',
       img: ExampleImg,
-      descripcion:''
+      descripcion: '',
     },
     {
       nombre: 'xxx',
       img: ExampleImg,
-      descripcion:''
+      descripcion: '',
     },
     {
       nombre: 'xxx',
       img: ExampleImg,
-      descripcion:''
+      descripcion: '',
     },
-    {
+    /*{
       nombre: 'xxx',
       img: ExampleImg,
       descripcion:''
-    },
-    {
+    },*/
+    /* {
       nombre: 'xxx',
       img: ExampleImg,
       descripcion:''
-    },
-
-    
+    },*/
   ]);
   return (
-    <div className='grid grid-cols-2 mr-14 space-x-40 justify-items-end'>
-      {EspProducts.map((EspProd,index) => {
-        return <EspecialProducts key={index} nombre={EspProd.nombre} img={EspProd.img} descripcion={EspProd.descripcion}/>;
+    <div
+      className='lg:grid grid-cols-2 lg:mr-14 lg:space-x-40 justify-items-end md:mr-5'
+      data-aos='fade-down-left'
+      data-aos-delay='400'
+    >
+      {EspProducts.map((EspProd, index) => {
+        return (
+          <EspecialProducts
+            key={index}
+            nombre={EspProd.nombre}
+            video={EspProd.video}
+            img={EspProd.img}
+            descripcion={EspProd.descripcion}
+          />
+        );
       })}
     </div>
   );
-}
+};
 
 export default ProductsListSpecial;

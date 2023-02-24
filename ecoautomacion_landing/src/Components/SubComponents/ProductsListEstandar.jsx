@@ -60,7 +60,7 @@ const ProductsListEstandar = () => {
   ]);
 
   return (
-    <div className='grid grid-cols-2 mr-14 space-x-40 justify-items-end'>
+    <div className='lg:grid grid-cols-2 lg:mr-14 lg:space-x-40 lg:justify-items-end mr-5' data-aos="fade-up-left" data-aos-delay="100">
       {persons.map((person, index) => {
         return (
           <StandarProduct

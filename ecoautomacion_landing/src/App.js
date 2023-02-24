@@ -7,6 +7,7 @@ import Products from './Components/Products';
 import Clients from './Components/Clients';
 import Footer from './Components/Footer';
 import WhatsappIcon from './Components/Whatsapp_Chat';
+//import Form from './Components/Form';
 
 const App = () => {
   return (

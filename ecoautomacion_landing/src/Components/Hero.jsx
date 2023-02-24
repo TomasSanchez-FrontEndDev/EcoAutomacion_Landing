@@ -5,12 +5,12 @@ import Group from '../Img/Group.png';
 
 const Hero = () => {
   return (
-    <div className='flex text-white bg-[#0E1527] w-full font-[Ubuntu] justify-between' id='Hero'>
-      <div className='w-4/12 ml-6 mt-24 flex flex-col justify-between mb-16'>
+    <div className='md:flex text-white bg-[#0E1527] w-full font-[Ubuntu] justify-between' id='Hero'>
+      <div className='w-4/12 ml-6 md:mt-24 md:pt-0 pt-4 flex flex-col justify-between mb-16'>
         <h1 className='text-5xl font-bold border-b-2 border-[#E1FF01] pb-1'>
           NUESTRA FABRICA
         </h1>
-        <div className=' space-y-3 py-6 border-r-2 border-[#E1FF01]'>
+        <div className=' space-y-3 py-6 lg:border-r-2 border-[#E1FF01] hidden md:block'>
           <div className='flex items-center'>
             <img src={Email} alt='Email-item' />
             <p className='ml-3'>EcoAutomacion@gmail.com</p>
@@ -21,7 +21,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className='w-5/12 mt-28 mb-6 mr-14'>
+      <div className='md:w-5/12 md:mt-28 md:mb-6 mr-14 w-full px-4'>
         <img src={Group} alt='' />
         <div className='space-y-3 mt-9 font-bold'>
           <p>

@@ -15,6 +15,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  width: 100vw !important;
 }
 
 code {
@@ -72,4 +75,73 @@ body::-webkit-scrollbar-thumb {
   height: 500px;
   width: 600px;
   align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .in-view {
+    position: fixed;
+    top: 50px;
+    left: 0;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 70%;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0077ff;
+}
+
+.form-button {
+  background-color: #0e1527;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 25%;
+}
+
+.form-button:hover {
+  background-color: #005ce6;
+}
+
+.styles-module_avatar__afcc4 img {
+  border: none !important;
+  border-radius: 0% !important;
+}
+
+.styles-module_chatFooter__TGv0P form svg {
+  margin-left: 10px;
+}
+
+.scrollbar {
+  width: 100vw;
+  overflow-x: hidden;
 }
